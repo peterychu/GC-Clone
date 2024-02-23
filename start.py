@@ -8,6 +8,11 @@ app = Flask(__name__)
 def hello():
     return 'Hello, World!'
 
+
+@app.route('//')
+def new():
+    return 'This is an added line!'
+
 # Run the Flask application
 if __name__ == '__main__':
     app.run(debug=True)
